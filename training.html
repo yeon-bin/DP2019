@@ -2,16 +2,39 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML 연습</title>
+    <link rel="stylesheet" type="text/css" href="./default.css">
+    <style>
+    h1{
+        color : yellow;
+    }
+    h2{
+        color : pink;
+    }
+    *{
+        font-weight : 200;
+    }
+    .class_name{
+        color:gray;
+    }
+    #id_name{
+        color:violet;
+    }
+    /*  #id 중복불가 */
+    /* .class 중복가능 */
+    /* css 주석 */
+
+    </style>
 </head>
 
 <body>
     <a href="index.html">뒤로가기</a>
     <a href="https://www.google.com" target="_blank">구글로 이동하기</a>
+    
     <!-- 타겟설정을 안하면 기본설정은 self임 (현재창에서 바로이동) -->
     
     <!-- h1~h6 숫자가 의미하는 바는 순서가 아닌 깊이(depth) 중요도같은느낌-->
     <h1>대제목</h1>
-    <h2>중제목</h2>
+    <h2 style="color:green;">중제목</h2>
     <h3>소제목</h3>
     <h4>세부</h4>
     
@@ -33,8 +56,8 @@
     <h2>비 순차적 목록</h2>
     목록을 순서에 관계없이 나열할 때
     <ul>
-        <li>소금</li>
-        <li>설탕</li>
+        <li class="class_name">소금</li>
+        <li id="id_name">설탕</li>
         <li>물</li>
     </ul>
     <h2>순차적 목록</h2>
@@ -61,6 +84,67 @@
 성립되는 콘텐츠에 광범위하게 사용됩니다. (dt : 주, dd : 종)
          -->
     </dl>
+
+    <a href="./../DP2019/training.html">버튼</a>
+    <!-- img 이미지  -->
+    <img src="./images/namuk.jpg" width="100px" height="100px">
+    <!-- strong, em<>, i -->
+    <strong>강조</strong>
+    <i>이탤릭</i>
+    <ins>삽입글</ins>
+    <del>삭제글</del>
+    <u>밑줄</u>
+    <strike>중앙선</strike>
+
+    2<sup>2</sup> : 2의 제곱
+    H<sub>2</sub> : 원소기호
+
+    <!-- table 도표, tr;table row 테이블행, tb : table date 칸,  -->
+    <style>
+    table,tr,td {
+        border: solid 1px black;
+    }
+    </style>
+    <!-- rowspan 행 확장, cplspan 열 확장 -->
+    <table summery="학과별 학번, 이름, 전화번호 정보">
+        <caption>학과별 전화번호</caption>
+        <!-- thead, tbody, tfoot -->
+        <thead>
+            <tr>
+                <th scope="col">제목1</th>
+                <th scope="col">제목2</th>
+                <th scope="col">제목3</th>
+                <th scope="col">제목4</th>
+                <th scope="col">제목5</th>
+            </tr>
+        </thead>
+      
+        <tr>
+            <td colspan="2">1</td>  
+            <!-- 가로로 2칸 차지하기 -->
+            <td rowspan="2">2</td>
+            <!-- 세로로 2칸 차지하기 -->
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+    
+    </table>
+ <!-- div division 구획 구분 블록형 -->
+ <div>
+     쥰내쥴려
+ </div>
+ <!-- span 구획 구분 라인형-->
+ <span>
+    쥰내쥴ㄹ려
+ </span>
+
+ <!-- 의미없이사용한할대강많ㅇ은ㄹ -->
 </body>
 
 </html>
