@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        b{
+            /* 요소 선택자 */
+            color: tomato;
+        }
+
+        .c_name{
+            color: teal;
+        }
+        #i_name{
+            color: aqua;
+        }
+
+        #i_name2:before{content:"★";}
+        #i_name2:after{content:"☆";}
+        #i_name2:first-letter{font-size:32px;}
+        #i_name2:first-line{color: crimson;}
+
+        .con:first-child{
+                color:blue;
+        }
+        .con:last-child{
+                color:pink;
+        }
+        .con:nth-child(5){
+                color:blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <b>내용1</b>
+    <div class="c_name">클래스</div>
+    <div id="i_name">아이디</div>
+    <div id="i_name2">가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 
+            가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 
+            가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 
+            선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자 가상요소 선택자</div>
+
+    <ul>
+        <li class="con">내용1</li>
+        <li class="con">내용2</li>
+        <li class="con">내용3</li>
+        <li class="con">내용4</li>
+        <li class="con">내용5</li>
+        <li class="con">내용6</li>
+    </ul>
+
+    <style>
+        a:link{
+            color:black;
+            text-decoration: none;
+        }
+        a:visited{
+            color:purple;
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        a:active{
+            color:yellow;
+        }
+        a:focus{
+            color: pink;
+        }
+</style>
+    <a href="#">A</a>
+</body>
+</html>
