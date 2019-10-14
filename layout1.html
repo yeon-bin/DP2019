@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>layout</title>
     <style>
+        #wrap{
+            min-width: 1100px; 
+            max-width: 1920px;
+
+        }
+
         header, nav, div, footer,h1, ul, li, h2, section{
             /*border: solid 1px black;*/
             /*경계 : 실선 1픽셀두께 검은색;*/
@@ -66,6 +72,97 @@
             background-color: #eeeeee;
         }
 
+        dd{
+            margin: 0px;
+        }
+
+        dt {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        div>section{
+            padding:50px;
+        }
+
+        div>section:nth-child(1){
+            background-color: #98f;
+        }
+        div>section:nth-child(2){
+            background-color: #5d9;
+        }
+        div>section:nth-child(3){
+            background-color: #f76;
+        }
+        div>section:nth-child(4){
+            background-color: #ec5;
+        }
+        div>section h3{
+            color: #fff;
+            font-size:32px;
+    
+        }
+        .content_part{
+            width: 480px;
+            float: left;
+            margin: 15px;
+    
+        }
+
+        div>section>div{
+            width:1100px;
+            margin-left: auto;
+            margin-right: auto;
+            /* 블록형 태그의 가운데 정렬법 */
+        }
+        
+        footer ul{
+            padding:0px;
+        }
+
+        footer ul>li{
+            list-style: none;
+            float: left;
+        }
+
+        /* footer>ul:nth-child(1)>li{
+            margin-left: 10px;
+            margin-right: 10px;
+        } */
+
+       footer{
+           background-color: #333;
+           color: #ddd;
+       }
+
+        #footer1>li{
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: solid 1px #aaa; 
+        }
+
+        #footer1>li:nth-child(6){
+            border:none;
+        }
+
+        #footer_div{
+            float: left;
+        }
+
+        #footer1>p{
+            float: left;
+        }
+
+        #footer2{
+            float: right;
+        }
+
+        #footer2>li{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -106,114 +203,136 @@
         <section>
             <div>
                 <h3>web design</h3>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img1.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
+                            제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다
                         </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                            내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img2.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
+                <div class="clear"></div>
             </div>
         </section>
         <section>
             <div>
                 <h3>web design</h3>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img3.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img4.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
+                <div class="clear"></div>
             </div>
         </section>
         <section>
             <div>
                 <h3>web design</h3>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img5.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img6.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
+                <div class="clear"></div>
             </div>
         </section>
         <section>
             <div>
                 <h3>web design</h3>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img7.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
-                <div>
+                <div class="content_part">
                     <img src="./images/layout1_img8.jpg" alt="">
                     <dl>
                         <dt>
-                            집에갈래요집에가고싶어요...
-                        </dt>
+                                제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다                        </dt>
                         <dd>
-                            배고파서 뒤지겠어요,,,죽겟어요,,,
+                                내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다내용입니다
                         </dd>
                     </dl>
                 </div>
+                <div class="clear"></div>
             </div>
         </section>
 
     </div>
-    <footer>footer</footer>
+    <footer>
+        <div id="footer_div">
+                <ul id="footer1">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+                    <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+        </div>
+       
+        <ul id="footer2">
+            <li><img src="./images/layout1_footer_icon1.png" /></li>
+            <li><img src="./images/layout1_footer_icon2.png" /></li>
+            <li><img src="./images/layout1_footer_icon3.png" /></li>
+            <li><img src="./images/layout1_footer_icon4.png" /></li>
+            <li><img src="./images/layout1_footer_icon5.png" /></li>
+            <li><img src="./images/layout1_footer_icon6.png" /></li>
+            <div class="clear"></div>
+        </ul>
+        <div class="clear"></div>
+    </footer>
 </div>
 </body>
 </html>
