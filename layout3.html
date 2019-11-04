@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("images/layout3_back.jpg");
+        }
+        
+        header li{
+            float: left;
+            list-style: none;
+            padding: 0px 15px;
+            padding: 0px 15px 0px 15px;
+        }
+
+        header ul{
+            padding: 0px;
+        }
+
+        .clear{
+            clear:both; height:0px; overflow: hidden;
+        }
+
+        .short_line{
+            width: 40px;
+            height: 0px;
+            border-bottom: solid 1px gray;
+        }
+
+        .card_part{
+            width: 310px;
+            background-color: #fff;
+            list-style: none;
+        }
+
+        .card_part dt{
+            font-weight: bolder;
+            margin: 0px;
+        }
+
+        .card_part dd{
+            font-size: 10px;
+        }
+
+        #content>ul{
+            margin:0px;
+            padding:0px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+            <header>
+                <a href="index.html">뒤로가기</a>
+                <h1>Gridly</h1>
+                <div class="short_line"></div>
+                <nav>
+                    <ul>
+                        <li>home</li>
+                        <li>digital designs</li>
+                        <li>web design</li>
+                        <li>branding/identity</li>
+                        <li>about me</li>
+                        <li>contact</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                
+            </header>
+            <div id="content">
+                <ul>
+                    <li class="card_part">
+                        <div class="top_visual">
+                            <img src="images/layout3_img1.jpg">
+                            <div>Photoshop Design</div>
+                        </div>
+                        <div class="bottom_info">
+                            <dl>
+                                <dt>Dulux Colour Awards</dt>
+                                <dd>
+                                    <div>12th October 2011</div>
+                                    <p>A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
+                                        A collection of posters showing the famous colours of history, 
+                                        advertises you add your own colours to history.
+                                    </p>
+                                    <div>Read On →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <footer>footer</footer>
+    </div>
+   
+</body>
+</html>
