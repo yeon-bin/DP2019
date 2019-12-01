@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap&subset=korean" rel="stylesheet">
     <title>December Korea movie</title>
-    
+
     <style type="text/css">
-       
+
+
         body{
             background-color: #1e1d1c;
             margin: 0px;
@@ -18,30 +19,35 @@
         }
 
         .index{
-            float: left; 
+            float: left;
+            display: block;
             margin-top: 20px;
+            margin-right: 100px;
             padding: 0px 20px 0px 20px;
             color: white;
+            text-decoration: none;
         }
 
         header>ul {
             float: right;
-            display: block;
+            display: inline;
             margin-block-start: 0px;
             margin-block-end: 0px;
             margin-top: 20px;
-            margin-right: 200px;
+            margin-right: 60px;
             padding-inline-start: 0px;
-        
         }
 
         header>ul>li{
             list-style: none;
             border-right: solid 1px white;
             padding : 0px 20px;
-            display: inline-block;
+            display: inline;
             color: white;
-            
+        }
+
+        header>ul>li>a{
+            text-decoration: none;
         }
 
         .title {
@@ -53,166 +59,243 @@
         }
 
 
-        #content>ul>li{
-            float:left;
-            list-style: none;
+        #content {
+            padding-left: 130px;
         }
 
 
+
+        #content>ul>li {
+            float: left;
+            list-style: none;
+            display: inline;
+            width: calc(100% / 4 );
+            margin: 20px 0px 20px 0px;
+            position: relative;
+        }
+
+        #content>ul{
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0px;
+            display: inline;
+        }
 
         .poster>img{
             width: 300px;
             height: 400px;
         }
 
+        .poster>.open_date{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 5px 10px;
+            position: absolute;
+            font-size: 9px;
+            top: 0px;
+            left: 0px;
+
+        }
+
+
+        .movie_info{
+            width: 280px;
+        }
+
+        .movie_title{
+            font-size:18px;
+            font-weight: bold;
+        }
+
+
+
+        .title{
+            margin : 50px 100px;
+        }
+
+        #title_top {
+            font-size: 24px;
+            margin: 0px 5px;
+        }
+
+        #title_bottom {
+            font-size: 64px;
+            font-weight: bold;
+
+        }
+        #title_bottom div{
+            display: inline;
+            color: #f11b49;
+        }
+
+        #wrap{
+            min-width: 1500px;
+            max-width: 1920px;
+            margin : auto;
+        }
+
+        .line {
+            width: auto;
+            border: 0.5px solid #ffffff;
+            margin: 50px 0px;
+        }
+
+        footer{
+            margin: 50px;
+        }
+
     </style>
+
 </head>
 <body>
-    <div id="wrap"> 
-        <header>
-            <a href="./index.html" class="index">←BACK</a>
-            <ul>
-                <li><a href="./layout1.html">layout1</a></li>
-                <li><a href="./layout2.html">layout2</a></li>
-                <li><a href="./layout3.html">layout3</a></li>
-            </ul>
-            <div class="clear"></div>
+<div id="wrap">
+    <header>
+        <a href="./index.html" class="index">←BACK</a>
+        <ul>
+            <li><a href="./layout1.html">layout1</a></li>
+            <li><a href="./layout2.html">layout2</a></li>
+            <li><a href="./layout3.html">layout3</a></li>
+        </ul>
+        <div class="clear"></div>
 
-            <div class="title">
-                <div id="title_top">2019년 12월 상영예정</div>
-                <div id="title_bottom">한국영화</div>
+        <div class="title">
+            <div id="title_top">2019년 12월 상영예정</div>
+            <div id="title_bottom">
+                <div>한국</div>영화
             </div>
-        </header>
-        <div id="content">
-            <ul>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image1.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image2.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image3.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image4.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image5.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image6.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image7.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image8.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image9.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image11.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image12.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                    
-                </li>
-                <li class="movie_card">
-                    <div class="poster">
-                        <img src="./movie/movie_image13.jpg">
-                    </div>
-                    <div class="movie_info">
-                        <p class="movie_title">제목제목제목</p>
-                        <p class="movie_explain">감독어쩌구 배우어쩌구</p>
-                    </div>
-                </li>  
-            </ul>
-            <div class="clear"></div>
         </div>
+    </header>
 
-        <footer>
-            Design by yeon-bin
-        </footer>
-        
+    <div class="line"></div>
+
+    <div id="content">
+        <ul>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image1.jpg">
+                    <div class="open_date">2019.12.04 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">감쪽같은 그녀</p>
+                    <p class="movie_explain">감독 허인무  / 나문희 김수안</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image2.jpg">
+                    <div class="open_date">2019.12.04 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">너의 여자친구</p>
+                    <p class="movie_explain">감독 이장희 / 이엘리야, 지일주</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image3.jpg">
+                    <div class="open_date">2019.12.04 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">아직 사랑하고 있습니까? </p>
+                    <p class="movie_explain">감독 신양중 / 김인권, 서태화, 이나라 </p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image4.jpg">
+                    <div class="open_date">2019.12.05 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">이태원</p>
+                    <p class="movie_explain">감독 강유가람 / 삼숙(본인), 나키(본인), 영화(본인)</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image5.jpg">
+                    <div class="open_date">2019.12.11 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">아내를 죽였다</p>
+                    <p class="movie_explain">감독 김하라 / 이시언, 안내상, 왕지혜</p>
+                </div>
+
+            </li>
+
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image7.jpg">
+                    <div class="open_date">2019.12.12 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">속물들</p>
+                    <p class="movie_explain">감독 신아가, 이상철 / 유다인, 심희섭, 송재림</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image8.jpg">
+                    <div class="open_date">2019.12.19 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">은지 : 돌이킬 수 없는 그녀</p>
+                    <p class="movie_explain">감독 구모 / 김유연, 김진근</p>
+                </div>
+
+            </li>
+
+
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image11.jpg">
+                    <div class="open_date">2019.12.19 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">백두산</p>
+                    <p class="movie_explain">감독 이해준, 김병서 / 이병헌, 하정우, 마동석</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image12.jpg">
+                    <div class="open_date">2019.12.18 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">시동</p>
+                    <p class="movie_explain">감독 최정열 / 마동석, 박정민, 정해인</p>
+                </div>
+
+            </li>
+            <li class="movie_card">
+                <div class="poster">
+                    <img src="./movie/movie_image13.jpg">
+                    <div class="open_date">2019.12 개봉</div>
+                </div>
+                <div class="movie_info">
+                    <p class="movie_title">천문: 하늘에 묻는다</p>
+                    <p class="movie_explain">감독 허진호 / 최민식, 한석규</p>
+                </div>
+            </li>
+        </ul>
+        <div class="clear"></div>
     </div>
-   
+
+    <div class="line"></div>
+
+    <footer>
+        Digital Publishing Design 2019
+        <br>
+        Design by yeon-bin
+    </footer>
+
+</div>
+
 </body>
 </html>
